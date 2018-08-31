@@ -44,7 +44,7 @@
 
 	<scm>
 		<connection>scm:git:git@github.com:Navdeep-Singh-Ghotra/DevOps.git</connection>
-		<developerConnection>scm:git:ssh://github.com/Navdeep-Singh-Ghotra/DevOps.git</developerConnection>
+		<developerConnection>scm:git:[fetch=]http://github.com/Navdeep-Singh-Ghotra/Devops [push=]ssh://Navdeep-Singh-Ghotra@github.com/Navdeep-Singh-Ghotra/Devops.git</developerConnection>
 		<url>git@github.com:Navdeep-Singh-Ghotra/DevOps.git</url>
 		<tag>v0.1.1</tag>
 	</scm>
