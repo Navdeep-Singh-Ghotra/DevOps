@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
@@ -24,6 +26,7 @@
 
 	</properties>
 
+
 	<distributionManagement>
 		<repository>
 			<id>release</id>
@@ -38,13 +41,12 @@
 	</distributionManagement>
 
 
-
 	<scm>
 		<connection>scm:git:git@github.com:Navdeep-Singh-Ghotra/DevOps.git</connection>
 		<developerConnection>scm:git:git@github.com:Navdeep-Singh-Ghotra/DevOps.git</developerConnection>
-		
+
 		<url>git@github.com:Navdeep-Singh-Ghotra/DevOps.git</url>
-		<tag>v0.0.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<dependencies>
@@ -67,7 +69,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 	</dependencies>
 
 	<build>
@@ -83,8 +85,10 @@
 				<version>2.5.1</version>
 				<configuration>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 
